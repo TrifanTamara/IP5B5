@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ipb5;
 
-/**
- *
- * @author Tamara
- */
 import java.util.Vector;
 
 public class Manager {
@@ -34,5 +26,11 @@ public class Manager {
       }else{
             return false;
     }
+      
+    @Override
+  public String toString()
+  {
+      return "manager de bilete!";
+  }
 
 }
