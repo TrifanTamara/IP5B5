@@ -50,9 +50,20 @@ public abstract class Cont {
         }
 
         eveniments.add(manager.buyTicket("colinde"));
+    }
 
-
-
+    public  void buyTicket(String event)
+    {
+        if (!manager.existEvent(event))
+        {
+            System.out.println("Nu exista asa eveniment");
+            return;
+        }
+        System.out.println(manager.existEvent(event));
+        System.out.println(this.name+" a cumparat un bilet la "+event);
+        if (manager.buyTicket(event)!=null ) {
+            eveniments.add(manager.buyTicket(event));
+        }
     }
 
 }
