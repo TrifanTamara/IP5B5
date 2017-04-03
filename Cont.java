@@ -1,3 +1,20 @@
+
+import java.util.Vector;
+
+public abstract class Cont {
+
+  public int ID;
+
+    public Vector  myManager;
+
+  public String getName() {
+  return null;
+  }
+
+  public void setName() {
+  }
+
+=======
 // Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
 // Jad home page: http://www.geocities.com/kpdus/jad.html
 // Decompiler options: packimports(3) 
