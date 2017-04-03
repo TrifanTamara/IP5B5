@@ -24,7 +24,7 @@ public class Main {
 
 
 
-        manager.addEvent(new Eveniment(10,"Untold"));
+        manager.addEvent(new Eveniment(4,"Untold"));
         manager.addEvent(new Eveniment(3,"Festivalul Codarii"));
         manager.addEvent(new Eveniment(400,"Ziua Iasilui"));
 
@@ -34,7 +34,13 @@ public class Main {
         manager.addUser(user2);
         manager.addUser(user1);
         manager.addUser(user3);
+        try {
+            guest.buyTicket("Untold");
+        }
+        catch (NullPointerException e) {
+            System.out.println("");
+        }
 
-        guest.buyTicket("Untold");
+
     }
 }
