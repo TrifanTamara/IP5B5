@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.ArrayList;
+
 /**
  * Created by Vasile Catana on 3/20/2017.
+
  */
-import java.util.Vector;
 
 public abstract class Cont {
 
@@ -11,7 +13,6 @@ public abstract class Cont {
     private String name;
     private Manager manager;
 
-    public Vector  myManager ;
 
     Cont(String name, Manager manager)
     {

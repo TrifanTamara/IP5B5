@@ -3,6 +3,8 @@ package com.company;
 /**
  * Created by Vasile Catana on 3/20/2017.
  */
+
+
 public class User extends Cont {
 
     private String name;
