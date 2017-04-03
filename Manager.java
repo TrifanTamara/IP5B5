@@ -1,3 +1,33 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   Manager.java
+
+import java.util.Vector;
+
+public class Manager
+{
+
+    public Manager()
+    {
+    }
+
+    public Manager getInstance()
+    {
+        return null;
+    }
+
+    public boolean getTicket()
+    {
+        return false;
+    }
+
+    public Manager manager;
+    public Eveniment evenimente;
+    public Cont conturi;
+    public Vector myEveniment;
+}
+=======
 package com.company;
 
 import java.util.ArrayList;
@@ -105,23 +135,3 @@ public class Manager {
         }
         conts.add(user);
     }
-//
-//    public  boolean existaCont(Cont x){
-//        for(int i=0; i<Cont.size(); ++i)
-//            if(conturi.get(i).id==x.id)
-//                return true;
-//        return false;
-//    }
-//    public void adaugaCont(Cont x){
-//        int ok=0;
-//        if (!existaCont(x)){
-//            for(int i=0; i<x.name.size(); ++i)
-//                if((x.name[i]<'a' or x.name[i]>'z') or (x.name[i]<'A' or x.name[i]>'Z')) then
-//            if(x.name[i]!=' ')
-//                ok=1;
-//            if (ok==0)
-//                conturi.add(x);
-//        }
-//
-//    }
-}
