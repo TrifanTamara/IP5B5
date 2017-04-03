@@ -41,6 +41,17 @@ public class Manager {
 
     }
 
+    public boolean getTicket(Eveniment e, int nr) {
+        if (e.getNrTickets()>nr-1) {
+            e.setAvailable(e.getNrTickets() - nr);
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
     public  boolean existaCont(Cont x){
        for(int i=0; i<Cont.length; ++i)
            if(conturi[i].id==x.id)
