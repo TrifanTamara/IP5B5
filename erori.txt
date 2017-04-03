@@ -1,0 +1,18 @@
+Erori posibile
+
+Cont(name, adresa)
+
+- introducerea in <name> de: numere, caractere nepermise (~#@$%^&*()+{}[]|\;:"/ etc);
+- valoare nula pentru <name>, <adresa>;
+- lunigime mai mica de 8 caractere pentru <name>;
+- adresa de mail trebuie sa aiba format valid ([nume]@[site]);
+
+
+Eveniment(nr, name)
+
+- valoare nula pentru <name>
+- valoare 0 pentru <nr>
+
+
+getTicket(eveniment,nr)
+- nr de bilete e mai mare decat stocul
