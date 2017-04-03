@@ -1,9 +1,11 @@
 package com.company;
 
+import java.util.ArrayList;
+
 /**
  * Created by Vasile Catana on 3/20/2017.
+
  */
-import java.util.Vector;
 
 public abstract class Cont {
 
@@ -11,13 +13,18 @@ public abstract class Cont {
     private String name;
     private Manager manager;
 
-    public Vector  myManager ;
+    private ArrayList<Eveniment> eveniments;
 
     Cont(String name, Manager manager)
     {
         this.name = name;
         this.manager = manager;
     }
+//    Cont(String name, Manager manager)
+//    {
+//        this.name = name;
+//        this.manager = manager;
+//    }
 
 
     public String getName() {
@@ -34,6 +41,29 @@ public abstract class Cont {
 
     }
 
+    public  void buyTicket(Eveniment event)
+    {
+        if (!manager.existEvent(event))
+        {
+            System.out.println("Nu exista asa eveniment");
+            return ;
+        }
 
+        eveniments.add(manager.buyTicket("colinde"));
+    }
+
+    public  void buyTicket(String event)
+    {
+        if (!manager.existEvent(event))
+        {
+            System.out.println("Nu exista asa eveniment");
+            return;
+        }
+        System.out.println(manager.existEvent(event));
+        System.out.println("S a cumparat un ticket la "+event);
+        if (manager.buyTicket("colinde")!=null) {
+            eveniments.add(manager.buyTicket(event));
+        }
+    }
 
 }
