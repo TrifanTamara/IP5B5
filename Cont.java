@@ -13,12 +13,18 @@ public abstract class Cont {
     private String name;
     private Manager manager;
 
+    private ArrayList<Eveniment> eveniments;
 
     Cont(String name, Manager manager)
     {
         this.name = name;
         this.manager = manager;
     }
+//    Cont(String name, Manager manager)
+//    {
+//        this.name = name;
+//        this.manager = manager;
+//    }
 
 
     public String getName() {
@@ -35,6 +41,18 @@ public abstract class Cont {
 
     }
 
+    public  void buyTicket(Eveniment event)
+    {
+        if (!manager.existEvent(event))
+        {
+            System.out.println("Nu exista asa eveniment");
+            return ;
+        }
 
+        eveniments.add(manager.buyTicket("colinde"));
+
+
+
+    }
 
 }
