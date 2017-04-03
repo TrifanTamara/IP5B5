@@ -6,16 +6,30 @@ package com.company;
 public class Eveniment {
 
     private int nrTickets;
+    private String name;
 
     Eveniment(int nr){
         nrTickets=nr;
     }
-    public int getAvailable()
+    Eveniment(int nr, String name){
+        nrTickets=nr;
+        this.name = name;
+    }
+    public boolean getAvailable()
     {
-        return nrTickets;
+        return nrTickets>0;
     }
 
     public void setAvailable(int n){
         nrTickets=n;
+    }
+    public  String getName()
+    {
+        return  this.name;
+    }
+
+    public int getNrTickets()
+    {
+        return  nrTickets;
     }
 }
