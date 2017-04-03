@@ -10,7 +10,7 @@ public class Manager {
     
   private static Manager manager=null;
 
-  public Cont[] conturi;
+  private Cont[] conturi;
 
   public Eveniment[]  myEveniment;
     
@@ -26,6 +26,17 @@ public class Manager {
       }else{
             return false;
     }
+      
+   public  boolean existaCont(Cont x){
+       for(int i=0; i<Cont.length; ++i)
+           if(conturi[i].id==x.id)
+               return true;
+       return false;
+   }
+   public void adaugaCont(Cont x){
+       if (!existaCont(x))
+           conturi.add(x);
+   }
       
     @Override
   public String toString()
